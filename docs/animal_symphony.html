@@ -51,7 +51,8 @@
     }
     $(function() {
       for (const url of pageUrls) {
-       $('#flipbook').append(`<div class="page"><img src="${url}" alt="Animal Symphony page" style="width:100%;height:100%;object-fit:contain;"></div>`);
+        $('#flipbook').append(`<div class="page"><img src="${url}" alt="Animal Symphony page" style="width:100%;height:100%;object-fit:contain;"></div>`);
+      }
       $('#flipbook').turn({
         width: 800,
         height: 500,
@@ -61,5 +62,6 @@
   </script>
 </body>
 </html>
+
 
 
