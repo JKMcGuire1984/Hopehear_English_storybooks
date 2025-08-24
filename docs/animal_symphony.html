@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Animal Symphony - Page Flip Book</title>
-  <!-- jQuery and Turn.js from CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@4/turn.min.js"></script>
   <style>
@@ -41,20 +40,18 @@
 <body>
   <h1>Animal Symphony</h1>
   <div id="flipbook"></div>
-  <a href="index.html" id="back-link">← Back to Library</a>
+  <a href="../index.html" id="back-link">← Back to Library</a>
 
   <script>
-    // Array of page image URLs (replace with actual page count if needed)
+    // Update this if you have more or fewer pages
     const pageCount = 12;
     const pageUrls = [];
     for (let i = 1; i <= pageCount; i++) {
-      pageUrls.push(`https://raw.githubusercontent.com/JKMcGuire1984/Hopehear_English_storybooks/main/Pages/Animal%20Symphony/${i}.jpg`);
+      pageUrls.push(`Animal%20symphony/${i}.jpg`);
     }
-
-    // Add pages to the flipbook
     $(function() {
       for (const url of pageUrls) {
-        $('#flipbook').append(`<div class="page"><img src="${url}" alt="Animal Symphony page" style="width:100%;height:100%;object-fit:contain;"></div>`);
+        $('#flipbook').append(`<div class="page"><img src="${https://raw.githubusercontent.com/JKMcGuire1984/Hopehear_English_storybooks/main/Animal%20symphony%20PNG.png}" alt="Animal Symphony page" style="width:100%;height:100%;object-fit:contain;"></div>`);
       }
       $('#flipbook').turn({
         width: 800,
